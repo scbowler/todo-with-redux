@@ -10,7 +10,6 @@ export default function(state = DEFAULT_STATE, action){
         case types.GET_LIST_DATA:
             return {...state, items: action.payload.data.todos};
         case types.GET_SINGLE_ITEM:
-            console.log('Get Single Item Result:', action);
             return {...state, singleItem: action.payload.data.todo};
         default:
             return state;

@@ -6,7 +6,6 @@ import { addNewItem } from '../actions';
 
 class AddForm extends Component {
     handleAddItem(values){
-        console.log('New Item:', values);
 
         this.props.addNewItem(values).then( () => {
             this.props.history.push('/');
